@@ -8,4 +8,4 @@
 * 同时放大或缩小x、y轴的显示范围
 * 更改x轴（时间）的显示范围
 ## 运行前的环境配置
-Win7下安装与使用Qwt（http://blog.csdn.net/yangming0/article/details/51895169）
+Win7下安装与使用Qwt(http://blog.csdn.net/yangming0/article/details/51895169)
