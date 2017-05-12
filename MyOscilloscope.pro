@@ -7,6 +7,8 @@
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): CONFIG += c++11
+lessThan(QT_MAJOR_VERSION, 5): QMAKE_CXXFLAGS += -std=c++0x
 
 TARGET = myOscilloscope
 TEMPLATE = app
@@ -31,11 +33,11 @@ HEADERS  += \
 
 FORMS    +=
 
-#QWT_LIB_DIR = "C:\Qt\Qt5.7.0\5.7\mingw53_32\lib"
-#QWT_INCLUDE_DIR = "C:\Qt\Qt5.7.0\5.7\mingw53_32\include\Qwt"
+#QWT_LIB_DIR = "C:/Qt/Qt5.7.0/5.7/mingw53_32/lib"
+#QWT_INCLUDE_DIR = "C:/Qt/Qt5.7.0/5.7/mingw53_32/include/Qwt"
 
-QWT_LIB_DIR = "C:\Qt\Qt4.8.7\mingw482\lib"
-QWT_INCLUDE_DIR = "C:\Qt\Qt4.8.7\mingw482\include\Qwt"
+QWT_LIB_DIR = "C:/Qt/Qt4.8.7/mingw482/lib"
+QWT_INCLUDE_DIR = "C:/Qt/Qt4.8.7/mingw482/include/Qwt"
 
 LIBS += -L$${QWT_LIB_DIR} \
         -lqwt \
